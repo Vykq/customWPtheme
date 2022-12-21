@@ -12,7 +12,7 @@ for (i = 0; i < acc.length; i++) {
     }
   });
 }
-
+alert('Sveiki');
 
 //Do jQuery
 jQuery( function( $ ) {

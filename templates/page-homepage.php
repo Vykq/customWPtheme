@@ -39,7 +39,7 @@ if( have_rows('homepage_template') ):
         }
 
         if( get_sub_field('what_you_want_to_add') == 'Reviews' ) {
-            echo 'Reviews';
+            get_template_part('blocks/block','reviews'); //To edit reviews block go to blocks/block-faq.php
         }
 
     endwhile;

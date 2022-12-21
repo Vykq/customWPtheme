@@ -419,3 +419,54 @@ footer {
   .faq-accordion.active {
     margin-bottom:0;
   }
+
+
+  /* single product reviews */
+  .reviewphoto {
+    width: 100%;
+    height: 250px;
+    object-fit: cover;
+    margin:0.5rem 0;
+  }
+
+  .commentlist {
+    width: 100%;
+    flex-wrap: wrap;
+    display: flex;
+    justify-content: center;
+    gap:1rem;
+    list-style: none;
+  }
+
+
+  .commentlist li {
+    flex-basis: 30%;
+    background-color: #ECECEC;
+    padding:1rem;
+    border:1px solid #d4d4d470;
+    border-radius: 5px;
+    height:100%;
+  }
+
+  .commentlist .avatar {
+    display:none;
+  }
+
+  .commentlist .comment-text .meta {
+    display:flex;
+    flex-direction: column;
+    font-size: 12px;
+  }
+
+  .commentlist .comment-text {
+    display:flex;
+    flex-direction: column;
+  }
+
+  .commentlist .comment-text .meta {
+    order:2;
+  }
+
+  .commentlist .comment-text .meta .woocommerce-review__dash {
+    display:none;
+  }

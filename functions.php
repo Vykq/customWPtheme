@@ -33,16 +33,3 @@ function woocommerce_support() {
    add_theme_support( 'woocommerce' );
 }   
 
-add_action( 'template_redirect', 'remove_after_single_product_section_on_home', 1 );
-function remove_after_single_product_section_on_home(){
-
-    // On home page only
-    if( is_front_page() ) {
-        remove_action( 'woocommerce_after_single_product_summary', 'woocommerce_output_product_data_tabs', 10 ); // Product tabs
-        remove_action( 'woocommerce_after_single_product_summary', 'woocommerce_upsell_display', 15 ); // Upsells
-        remove_action( 'woocommerce_after_single_product_summary', 'woocommerce_output_related_products', 20 ); // Related products
-    }
-}
-
-
-
