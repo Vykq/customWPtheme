@@ -1,0 +1,421 @@
+/*
+Theme Name: Nuvalyk.lt theme
+Theme URI: 
+Author: the Vykintas Venckus
+Author URI: 
+Description: Theme for nuvalyk.lt screen cleaner
+Requires at least: 6.1
+Tested up to: 6.1
+Requires PHP: 5.6
+Version: 1.0
+License: GNU General Public License v2 or later
+License URI: https://www.gnu.org/licenses/old-licenses/gpl-2.0.html
+Tags: 
+*/
+
+/* Main styles */
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    font-family: 'Poppins';
+}
+
+.sitewidth {
+    padding:0 5rem;
+    margin:2rem 0;
+}
+
+.topbar {
+    padding:5px 0;
+}
+
+header{
+    display:flex;
+    padding:1rem 5rem;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0px 4px 16px 1px #00000014;
+}
+
+header nav {
+    display:flex;
+    justify-content: flex-end;
+}
+
+footer nav {
+    display:flex;
+    flex-direction: column;
+}
+
+header nav li {
+    list-style: none;
+    padding:0 1rem;
+}
+
+footer nav li {
+    list-style: none;
+    padding: 5px 0;
+}
+
+header nav li a {
+    text-decoration: none;
+    font-weight: 500;
+    font-size:18px;
+}
+
+footer nav li a {
+    text-decoration: none;
+    font-weight: 400;
+    font-size: 16px;
+}
+
+header nav .current-menu-item a {
+
+    font-weight: 700;
+}
+
+.logo-col {
+    width:25%;
+}
+
+.menu-col {
+    width:60%;
+}
+
+.cart-col{
+    width:10%;
+    text-align:right;
+}
+
+#site-logo {
+    width:70%;
+}
+
+footer {
+    padding:2rem 5rem;
+
+}
+
+.footer-main {
+    display:flex;
+        justify-content: center;
+    align-items: center;
+}
+
+.footer-col {
+    width:33%;
+}
+
+.wrapper {
+    min-height: 100vh;
+}
+
+#footer-logo {
+    width:60%;
+}
+
+.social-media-icon {
+    margin:0.5rem;
+}
+
+.footer-copyright {
+    padding-top:2rem;
+    display:flex;
+    flex-direction: column;
+    text-align:Center;
+    align-items:center;
+    font-size:12px;
+}
+
+.paymentcards {
+    padding:3rem 0;
+    width:20%;
+}
+
+/* slider css */
+
+
+
+.splide__pagination {
+    display:none!important; /* To enable slides pagination change to FLEX */
+}
+
+.fullheight li {
+    height:80vh;
+    background-size: cover;
+}
+
+.splide h2 {
+    font-size: 52px;
+}
+
+.splide p {
+    font-size:36px;
+}
+
+.splidebtn {
+    padding:1rem 2rem;
+    border-radius: 25px;
+    text-decoration: none;
+}
+
+.splide-left .splidebtn {
+    align-self:flex-start;
+}
+
+
+.splide-left {
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    height:100%;
+    padding:0 5rem;
+}
+
+.splide-center {
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height:100%;
+    padding:0 5rem;
+}
+
+.splide-right {
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-end;
+    height:100%;
+    padding:0 5rem;
+}
+
+/* Text - Image styles */
+
+.tirow {
+    display:flex;
+    flex-direction:row;
+    align-items: center;
+    gap:2rem;
+}
+
+.ticol {
+    width:50%;
+    padding:1rem;
+}
+
+.ticol img {
+    width:100%;
+}
+ /* Featured product */
+
+ .featuredproduct {
+    display:flex;
+    margin:2rem 0;
+    gap:2rem;
+ }
+
+ .ftproductcol {
+    width:50%;
+ }
+
+ .thumbnails {
+    display: flex;
+    margin: 1rem auto 0;
+    padding: 0;
+    justify-content: center;
+  }
+  
+  .thumbnail {
+    width: 70px;
+    height: 70px;
+    overflow: hidden;
+    list-style: none;
+    margin: 0 0.2rem;
+    cursor: pointer;
+  }
+  
+  .thumbnail img {
+    width: 100%;
+    height: auto;
+  }
+
+  .thumbnails .is-active {
+    border:1px solid #d4d4d4;
+  }
+
+  #productsplide li img {
+    width:100%;
+  }
+
+  .producttitle {
+    font-size: 52px;
+  }
+
+  .featuredicons {
+    width:100%;
+    display:flex;
+    flex-direction: row;
+    align-items: center;
+    gap:2rem;
+  }
+
+  .smallicon {
+    font-size: 98px;
+  }
+
+  .fticon {
+    width:20%;
+  }
+
+  .fticoncontent{
+    width:80%;
+  }
+
+  .fticons {
+    margin:2rem 0;
+  }
+
+  .ftprice del {
+    text-decoration: none;
+  }
+
+  .ftprice ins {
+    text-decoration: none;
+  }
+
+
+  .ftprice del span {
+    text-decoration: line-through;
+    font-size: 26px;
+    color:#ddd;
+  }
+
+  .ftprice ins span {
+    text-decoration: none;
+    font-size: 36px;
+    font-weight: 500;
+    margin-left:0.5rem;
+  }
+
+  .wp-element-button {
+    width:100%;
+    border-radius: 10px;
+    padding:1rem;
+    color:#000;
+    font-size: 18px;
+    font-weight: 700;
+    border:none;
+  }
+
+  button.single_add_to_cart_button.button.alt.wp-element-button::after{
+    content:'\f07a';
+    padding:0 3px;
+    font-family: "Font Awesome 6 Free";
+    font-weight: 900;
+  }
+
+  .ftatc .quantity {
+    display: flex;
+    margin:1rem 0;
+  }
+
+  .ftatc .minus, .ftatc .plus, .ftatc input {
+    background-color: #fff;
+    border:1px solid #d4d4d4;
+    width:32px;
+    height:48px;
+  }
+
+  .ftatc .minus:hover, .ftatc .plus:hover{
+    background-color: #eeeeee;
+  }
+
+
+  .ftatc input::-webkit-outer-spin-button,
+.ftatc input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+  
+ .ftatc input[type=number] {
+
+    margin:0;
+    background-color: #fff;
+    border:1px solid #d4d4d4;
+    width:60px;
+    text-align: center;
+    height:48px;
+  }
+
+  /* Heading styles */
+
+  .headingtitle {
+    font-size: 36px;
+  }
+
+  /* 3 Columns */
+
+  .threerow {
+    display:flex;
+    flex-direction: row;
+    gap:2rem;
+    align-items: flex-start;
+  }
+
+  .threecol {
+    width:33%;
+  }
+
+  .threecol img {
+    width:100%;
+    margin-bottom:1rem;
+  }
+
+  .threecolhead {
+    font-size: 29px;
+    text-align: center;
+
+  }
+
+  /* faq styles */
+
+  .faq-accordion {
+    display:block;
+    border:none;
+    padding:0.5rem 2rem;
+    width:100%;
+    text-align: left;
+    background:#d4d4d430;
+    cursor:pointer;
+    font-size: 18px;
+    font-weight: 700;
+    margin-bottom:1rem;
+
+  }
+
+  .faq-accordion::before {
+    content:'\2b';
+    font-family: 'Font Awesome 6 Free';
+    font-weight: 900;
+    padding:0 .5rem;
+  }
+
+  .faq-accordion.active::before {
+    content:'\f068';
+    font-family: 'Font Awesome 6 Free';
+    font-weight: 900;
+    padding:0 .5rem;
+  }
+
+  .faq-panel {
+    padding: 0.5rem 2rem;
+    background:#d4d4d470;
+    margin-bottom:1rem;
+  }
+
+  .faq-accordion.active {
+    margin-bottom:0;
+  }
